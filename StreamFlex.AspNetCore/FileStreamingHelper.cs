@@ -42,7 +42,7 @@ public static class FileStreamingHelper
         using var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read);
         await StreamAsync(context, stream, fileInfo.Length, contentType, downloadFileName, enableRangeProcessing, configureResponse, cancellationToken);
     }
-    /// <summary>
+    /// <summary> 
     /// Streams a given <see cref="Stream"/> to the HTTP response with optional range processing.
     /// </summary>
     /// <param name="context">The current HTTP context.</param>
